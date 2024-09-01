@@ -1,16 +1,14 @@
 {
   config,
-  inputs,
   lib,
   osConfig,
-  system,
   namespace,
+  pkgs,
   ...
 }:
 let
   inherit (lib) mkIf;
   inherit (lib.${namespace}) mkBoolOpt;
-  inherit (inputs) hyprlock;
 
   catppuccin = import (lib.snowfall.fs.get-file "modules/home/theme/catppuccin/colors.nix");
 
@@ -24,7 +22,7 @@ in
   config = mkIf cfg.enable {
     programs.hyprlock = {
       enable = true;
-      package = hyprlock.packages.${system}.hyprlock;
+      package = pkgs.hyprlock;
 
       settings = {
         general = {

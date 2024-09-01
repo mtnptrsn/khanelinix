@@ -1,15 +1,13 @@
 {
   config,
-  inputs,
   lib,
-  system,
   namespace,
+  pkgs,
   ...
 }:
 let
   inherit (lib) mkIf getExe getExe';
   inherit (lib.${namespace}) mkBoolOpt;
-  inherit (inputs) hypridle;
 
   cfg = config.${namespace}.services.hypridle;
 in
@@ -21,7 +19,7 @@ in
   config = mkIf cfg.enable {
     services.hypridle = {
       enable = true;
-      package = hypridle.packages.${system}.hypridle;
+      package = pkgs.hypridle;
 
       settings = {
         general = {

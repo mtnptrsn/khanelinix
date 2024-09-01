@@ -36,74 +36,75 @@
     ##
     # Hyprland Section
     ##
-    aquamarine = {
-      url = "github:hyprwm/aquamarine";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    # aquamarine = {
+    #   url = "github:hyprwm/aquamarine";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
 
-    hyprland = {
-      url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
+    # hyprland = {
+    #   url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
+    #
+    #   inputs = {
+    #     # url = "git+https://github.com/khaneliman/Hyprland?ref=windows&submodules=1";
+    #     nixpkgs.follows = "nixpkgs";
+    #     aquamarine.follows = "aquamarine";
+    #     xdph.follows = "xdg-desktop-portal-hyprland";
+    #     hyprwayland-scanner.follows = "hyprwayland-scanner";
+    #     hyprlang.follows = "hyprlang";
+    #     hyprutils.follows = "hyprutils";
+    #   };
+    # };
 
-      inputs = {
-        # url = "git+https://github.com/khaneliman/Hyprland?ref=windows&submodules=1";
-        nixpkgs.follows = "nixpkgs";
-        aquamarine.follows = "aquamarine";
-        xdph.follows = "xdg-desktop-portal-hyprland";
-        hyprwayland-scanner.follows = "hyprwayland-scanner";
-        hyprlang.follows = "hyprlang";
-        hyprutils.follows = "hyprutils";
-      };
-    };
-
-    xdg-desktop-portal-hyprland = {
-      url = "github:hyprwm/xdg-desktop-portal-hyprland";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
-    hypridle = {
-      url = "github:hyprwm/Hypridle";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
-    hyprlang = {
-      url = "github:hyprwm/hyprlang";
-
-      inputs = {
-        nixpkgs.follows = "hyprland/nixpkgs";
-        hyprutils.follows = "hyprutils";
-      };
-    };
-
-    hyprlock = {
-      # url = "git+file:///home/khaneliman/Documents/github/hypridle";
-      url = "github:hyprwm/Hyprlock";
-      inputs.nixpkgs.follows = "hyprland/nixpkgs";
-    };
-
-    hyprpaper = {
-      url = "github:hyprwm/hyprpaper";
-      inputs.nixpkgs.follows = "hyprland/nixpkgs";
-    };
-
+    # xdg-desktop-portal-hyprland = {
+    #   url = "github:hyprwm/xdg-desktop-portal-hyprland";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
+    #
+    # hypridle = {
+    #   url = "github:hyprwm/Hypridle";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
+    #
+    # hyprlang = {
+    #   url = "github:hyprwm/hyprlang";
+    #
+    #   inputs = {
+    #     nixpkgs.follows = "hyprland/nixpkgs";
+    #     hyprutils.follows = "hyprutils";
+    #   };
+    # };
+    #
+    # hyprlock = {
+    #   # url = "git+file:///home/khaneliman/Documents/github/hypridle";
+    #   url = "github:hyprwm/Hyprlock";
+    #   inputs.nixpkgs.follows = "hyprland/nixpkgs";
+    # };
+    #
+    # hyprpaper = {
+    #   url = "github:hyprwm/hyprpaper";
+    #   inputs.nixpkgs.follows = "hyprland/nixpkgs";
+    # };
+    #
     hyprland-contrib = {
       url = "github:hyprwm/contrib";
-      inputs.nixpkgs.follows = "hyprland/nixpkgs";
-    };
-
-    hyprland-plugins = {
-      url = "github:hyprwm/hyprland-plugins";
-      inputs.hyprland.follows = "hyprland";
-    };
-
-    hyprutils = {
-      url = "github:hyprwm/hyprutils";
+      # inputs.nixpkgs.follows = "hyprland/nixpkgs";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
-    hyprwayland-scanner = {
-      url = "github:hyprwm/hyprwayland-scanner";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    #
+    # hyprland-plugins = {
+    #   url = "github:hyprwm/hyprland-plugins";
+    #   inputs.hyprland.follows = "hyprland";
+    # };
+    #
+    # hyprutils = {
+    #   url = "github:hyprwm/hyprutils";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
+    #
+    # hyprwayland-scanner = {
+    #   url = "github:hyprwm/hyprwayland-scanner";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
 
     # Hyprland socket watcher
     hypr-socket-watch = {
