@@ -90,6 +90,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    nix-rosetta-builder = {
+      url = "github:cpick/nix-rosetta-builder";
+      inputs.nixpkgs.follows = "nixpkgs-unstable";
+    };
+
     # Nix User Repository (master)
     nur.url = "github:nix-community/NUR";
 
@@ -188,7 +193,10 @@
 
       systems = {
         modules = {
-          darwin = with inputs; [ sops-nix.darwinModules.sops ];
+          darwin = with inputs; [
+            nix-rosetta-builder.darwinModules.default
+            sops-nix.darwinModules.sops
+          ];
           nixos = with inputs; [
             disko.nixosModules.disko
             lanzaboote.nixosModules.lanzaboote
