@@ -29,18 +29,19 @@ in
       };
 
       linux-builder = {
-        enable = true;
-        ephemeral = true;
-        maxJobs = 4;
-        speedFactor = 15;
-        supportedFeatures = [
-          "big-parallel"
-          "nixos-test"
-        ];
-        config = {
-          virtualisation.darwin-builder.memorySize = 8 * 1024;
-          virtualisation.cores = 8;
-        };
+        # NOTE: Using rosetta builder requires initialization with an existing linux-builder
+        # enable = true;
+        # NOTE: disable customizations on new installations otherwise linux-builder wont work
+        # ephemeral = true;
+        # speedFactor = 15;
+        # supportedFeatures = [
+        #   "big-parallel"
+        #   "nixos-test"
+        # ];
+        # config = {
+        #   virtualisation.darwin-builder.memorySize = 8 * 1024;
+        #   virtualisation.cores = 8;
+        # };
       };
 
       optimise = {
