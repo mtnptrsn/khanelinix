@@ -56,7 +56,7 @@ in
       };
     };
 
-    khanelinix = {
+    mtnptrsn = {
       display-managers = {
         sddm = {
           enable = true;

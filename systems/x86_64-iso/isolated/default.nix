@@ -60,7 +60,7 @@ in
     };
   };
 
-  khanelinix = {
+  mtnptrsn = {
     nix = enabled;
 
     desktop = {

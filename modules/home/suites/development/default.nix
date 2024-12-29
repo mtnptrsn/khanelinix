@@ -52,7 +52,7 @@ in
           nix-update
           nix-output-monitor
           snowfall-flake.packages.${system}.flake
-          khanelinix.build-by-path
+          mtnptrsn.build-by-path
         ]
         ++ lib.optionals cfg.gameEnable [
           godot_4
@@ -74,14 +74,14 @@ in
         nrdp = ''${lib.getExe pkgs.nixpkgs-review} pr $1 --systems "x86_64-darwin aarch64-darwin" --num-parallel-evals 2 --post-result'';
         nrl = ''${lib.getExe pkgs.nixpkgs-review} pr $1 --systems "x86_64-linux aarch64-linux" --num-parallel-evals 2'';
         nrlp = ''${lib.getExe pkgs.nixpkgs-review} pr $1 --systems "x86_64-linux aarch64-linux" --num-parallel-evals 2 --post-result'';
-        # TODO: remove once remote building to khanelinix works
+        # TODO: remove once remote building to mtnptrsn works
         nrmp = ''${lib.getExe pkgs.nixpkgs-review} pr $1 --systems "x86_64-darwin aarch64-darwin aarch64-linux" --num-parallel-evals 3 --post-result'';
         nup = ''nix-shell maintainers/scripts/update.nix --argstr package $1'';
         num = ''nix-shell maintainers/scripts/update.nix --argstr maintainer $1'';
       };
     };
 
-    khanelinix = {
+    mtnptrsn = {
       programs = {
         graphical = {
           editors = {

@@ -37,7 +37,7 @@ in
             {
               options = rec {
                 nix-darwin.expr = ''${flake}.darwinConfigurations.khanelimac.options'';
-                nixos.expr = ''${flake}.nixosConfigurations.khanelinix.options'';
+                nixos.expr = ''${flake}.nixosConfigurations.mtnptrsn.options'';
                 home-manager.expr = ''${nixos.expr}.home-manager.users.type.getSubOptions [ ]'';
               };
             };

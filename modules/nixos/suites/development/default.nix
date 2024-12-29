@@ -30,7 +30,7 @@ in
       8081
     ];
 
-    khanelinix = {
+    mtnptrsn = {
       user = {
         extraGroups = [ "git" ] ++ lib.optionals cfg.sqlEnable [ "mysql" ];
       };

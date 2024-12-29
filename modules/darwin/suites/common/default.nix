@@ -40,7 +40,7 @@ in
       ];
     };
 
-    khanelinix = {
+    mtnptrsn = {
       home.extraOptions = {
         home.shellAliases = {
           # Prevent shell log command from overriding macos log

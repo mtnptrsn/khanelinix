@@ -16,7 +16,7 @@ in
   };
 
   config = mkIf cfg.enable {
-    khanelinix = {
+    mtnptrsn = {
       services = {
         spice-vdagentd = lib.mkDefault enabled;
         spice-webdav = lib.mkDefault enabled;

@@ -10,7 +10,7 @@ let
   cfg = config.${namespace}.user;
 in
 {
-  khanelinix = {
+  mtnptrsn = {
     archetypes = {
       personal = enabled;
       workstation = enabled;

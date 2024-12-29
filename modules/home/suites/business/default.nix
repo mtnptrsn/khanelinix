@@ -31,7 +31,7 @@ in
         p3x-onenote
       ];
 
-    khanelinix = {
+    mtnptrsn = {
       programs = {
         terminal = {
           tools = {

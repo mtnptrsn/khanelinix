@@ -16,7 +16,7 @@ in
   };
 
   config = lib.mkIf cfg.enable {
-    khanelinix = {
+    mtnptrsn = {
       programs = {
         graphical = {
           addons = {

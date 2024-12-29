@@ -19,7 +19,7 @@ in
       seatd = {
         enable = true;
         # NOTE: does it matter?
-        user = config.khanelinix.user.name;
+        user = config.mtnptrsn.user.name;
       };
     };
   };

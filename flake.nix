@@ -1,5 +1,5 @@
 {
-  description = "KhaneliNix";
+  description = "mtnptrsn";
 
   inputs = {
     anyrun.url = "github:anyrun-org/anyrun";
@@ -138,11 +138,11 @@
 
         snowfall = {
           meta = {
-            name = "khanelinix";
-            title = "KhaneliNix";
+            name = "mtnptrsn";
+            title = "mtnptrsn";
           };
 
-          namespace = "khanelinix";
+          namespace = "mtnptrsn";
         };
       };
     in

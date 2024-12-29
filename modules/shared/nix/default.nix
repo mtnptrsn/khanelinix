@@ -85,9 +85,9 @@ in
           in
           lib.optionals config.${namespace}.security.sops.enable [
             (
-              lib.mkIf (host != "khanelinix") {
+              lib.mkIf (host != "mtnptrsn") {
                 inherit protocol sshUser;
-                hostName = "khanelinix.local";
+                hostName = "mtnptrsn.local";
                 systems = [
                   "x86_64-linux"
                   "aarch64-linux"
@@ -116,8 +116,8 @@ in
               // lib.optionalAttrs (host == "khanelimac") {
                 sshKey = config.sops.secrets.khanelimac_khaneliman_ssh_key.path;
               }
-              // lib.optionalAttrs (host == "khanelinix") {
-                sshKey = config.sops.secrets.khanelinix_khaneliman_ssh_key.path;
+              // lib.optionalAttrs (host == "mtnptrsn") {
+                sshKey = config.sops.secrets.mtnptrsn_khaneliman_ssh_key.path;
               }
             )
           ]
@@ -137,8 +137,8 @@ in
                   speedFactor = 10;
                   supportedFeatures = supportedFeatures ++ [ "apple-virt" ];
                 }
-                // lib.optionalAttrs (host == "khanelinix") {
-                  sshKey = config.sops.secrets.khanelinix_khaneliman_ssh_key.path;
+                // lib.optionalAttrs (host == "mtnptrsn") {
+                  sshKey = config.sops.secrets.mtnptrsn_khaneliman_ssh_key.path;
                 }
               )
               (
@@ -151,8 +151,8 @@ in
                   supportedFeatures = [ "big-parallel" ];
                   publicHostKey = "c3NoLWVkMjU1MTkgQUFBQUMzTnphQzFsWkRJMU5URTVBQUFBSUZ6OEZYU1ZFZGY4RnZETWZib3hoQjVWalNlN3kyV2dTYTA5cTFMNHQwOTkgCg";
                 }
-                // lib.optionalAttrs (host == "khanelinix") {
-                  sshKey = config.sops.secrets.khanelinix_khaneliman_ssh_key.path;
+                // lib.optionalAttrs (host == "mtnptrsn") {
+                  sshKey = config.sops.secrets.mtnptrsn_khaneliman_ssh_key.path;
                 }
                 // lib.optionalAttrs (host == "khanelimac") {
                   sshKey = config.sops.secrets.khanelimac_khaneliman_ssh_key.path;
@@ -200,7 +200,7 @@ in
 
           substituters = [
             "https://cache.nixos.org"
-            "https://khanelinix.cachix.org"
+            "https://mtnptrsn.cachix.org"
             "https://nix-community.cachix.org"
             "https://nixpkgs-unfree.cachix.org"
             "https://numtide.cachix.org"
@@ -208,7 +208,7 @@ in
 
           trusted-public-keys = [
             "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY="
-            "khanelinix.cachix.org-1:FTmbv7OqlMsmJEOFvAlz7PVkoGtstbwLC2OldAiJZ10="
+            "mtnptrsn.cachix.org-1:FTmbv7OqlMsmJEOFvAlz7PVkoGtstbwLC2OldAiJZ10="
             "nix-community.cachix.org-1:mB9FSh9qf2dCimDSUo8Zy7bkq5CX+/rkCWyvRCYg3Fs="
             "nixpkgs-unfree.cachix.org-1:hqvoInulhbV4nJ9yJOEr+4wxhDV4xq2d1DK7S6Nj6rs="
             "numtide.cachix.org-1:2ps1kLBUWjxIneOy1Ik6cQjb41X0iXVXeHigGmycPPE="
@@ -225,7 +225,7 @@ in
         "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFz8FXSVEdf8FvDMfboxhB5VjSe7y2WgSa09q1L4t099";
       "khanelimac".publicKey =
         "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINBG8l3jQ2EPLU+BlgtaQZpr4xr97n2buTLAZTxKHSsD";
-      "khanelinix".publicKey =
+      "mtnptrsn".publicKey =
         "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFuMXeT21L3wnxnuzl0rKuE5+8inPSi8ca/Y3ll4s9pC";
     };
   };

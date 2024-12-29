@@ -16,7 +16,7 @@ in
     file
   ];
 
-  khanelinix = {
+  mtnptrsn = {
     nix = enabled;
 
     cli-apps = {

@@ -40,7 +40,7 @@ in
       ]
       ++ lib.optionals cfg.retroarchFull [ retroarchFull ];
 
-    khanelinix = {
+    mtnptrsn = {
       programs = {
         graphical = {
           apps = {

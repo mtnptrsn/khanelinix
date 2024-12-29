@@ -68,7 +68,7 @@ in
       };
     };
 
-    khanelinix = {
+    mtnptrsn = {
       programs = {
         graphical = {
           launchers = {

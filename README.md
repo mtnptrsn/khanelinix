@@ -6,8 +6,8 @@
 </h3>
 
 <p align="center">
- <a href="https://github.com/khaneliman/khanelinix/stargazers"><img src="https://img.shields.io/github/stars/khaneliman/khanelinix?colorA=363a4f&colorB=b7bdf8&style=for-the-badge"></a>
- <a href="https://github.com/khaneliman/khanelinix/commits"><img src="https://img.shields.io/github/last-commit/khaneliman/khanelinix?colorA=363a4f&colorB=f5a97f&style=for-the-badge"></a>
+ <a href="https://github.com/khaneliman/mtnptrsn/stargazers"><img src="https://img.shields.io/github/stars/khaneliman/mtnptrsn?colorA=363a4f&colorB=b7bdf8&style=for-the-badge"></a>
+ <a href="https://github.com/khaneliman/mtnptrsn/commits"><img src="https://img.shields.io/github/last-commit/khaneliman/mtnptrsn?colorA=363a4f&colorB=f5a97f&style=for-the-badge"></a>
   <a href="https://wiki.nixos.org/wiki/Flakes" target="_blank">
  <img alt="Nix Flakes Ready" src="https://img.shields.io/static/v1?logo=nixos&logoColor=d8dee9&label=Nix%20Flakes&labelColor=5e81ac&message=Ready&color=d8dee9&style=for-the-badge">
 </a>
@@ -16,7 +16,7 @@
 </a>
 </p>
 
-Welcome to khanelinix, a personal Nix configuration repository. This repository
+Welcome to mtnptrsn, a personal Nix configuration repository. This repository
 contains my NixOS and Nixpkgs configurations, along with various tools and
 customizations to enhance the Nix experience.
 
@@ -46,8 +46,8 @@ follow the installation instruction on
 nix-shell -p git
 
 # Clone 
-git clone https://github.com/khaneliman/khanelinix.git
-cd khanelinix
+git clone https://github.com/khaneliman/mtnptrsn.git
+cd mtnptrsn
 
 # Linux
 sudo nixos-rebuild switch --flake .
@@ -139,7 +139,7 @@ customize your Nix environment while maintaining flexibility and modularity.
 Run packages directly with:
 
 ```console
-nix run --extra-experimental-features 'nix-command flakes' github:khaneliman/khanelinix#packageName
+nix run --extra-experimental-features 'nix-command flakes' github:khaneliman/mtnptrsn#packageName
 ```
 
 Or install from the `packages` output. For example:
@@ -147,8 +147,8 @@ Or install from the `packages` output. For example:
 ```nix
 # flake.nix
 {
-  inputs.khanelinix = {
-    url = "github:khaneliman/khanelinix";
+  inputs.mtnptrsn = {
+    url = "github:khaneliman/mtnptrsn";
     inputs.nixpkgs.follows = "nixpkgs";
   };
 }
@@ -156,7 +156,7 @@ Or install from the `packages` output. For example:
 # configuration.nix
 {pkgs, inputs, system, ...}: {
   environment.systemPackages = [
-    inputs.khanelinix.packages."${system}".packageName
+    inputs.mtnptrsn.packages."${system}".packageName
   ];
 }
 ```
@@ -165,11 +165,11 @@ Or install from the `packages` output. For example:
 
 ## MacOS
 
-<img width="1512" alt="image" src="https://github.com/khaneliman/khanelinix/assets/1778670/abbd501e-60c4-46c3-927d-12890dadd811">
+<img width="1512" alt="image" src="https://github.com/khaneliman/mtnptrsn/assets/1778670/abbd501e-60c4-46c3-927d-12890dadd811">
 
 ## NixOS
 
-![image](https://github.com/khaneliman/khanelinix/assets/1778670/34aebc9c-b053-4ccf-9540-6da5e93a77d5)
+![image](https://github.com/khaneliman/mtnptrsn/assets/1778670/34aebc9c-b053-4ccf-9540-6da5e93a77d5)
 
 # Resources
 

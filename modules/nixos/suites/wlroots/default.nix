@@ -18,7 +18,7 @@ in
 
   config = mkIf cfg.enable {
 
-    khanelinix = {
+    mtnptrsn = {
       services = {
         seatd = mkDefault enabled;
       };

@@ -90,7 +90,7 @@ in
         // historicalCrashAliases;
     };
 
-    khanelinix = {
+    mtnptrsn = {
       programs = {
         graphical = {
           launchers = {

@@ -26,7 +26,7 @@ in
     # FIXME: broken nixpkgs
     # programs.k3b.enable = true;
 
-    khanelinix = {
+    mtnptrsn = {
       user.extraGroups = [ "cdrom" ];
     };
   };

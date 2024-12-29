@@ -9,7 +9,7 @@ let
   inherit (lib.${namespace}) enabled disabled;
 in
 {
-  khanelinix = {
+  mtnptrsn = {
     user = {
       enable = true;
       inherit (config.snowfallorg.user) name;

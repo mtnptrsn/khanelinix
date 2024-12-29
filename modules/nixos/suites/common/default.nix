@@ -33,7 +33,7 @@ in
       ];
     };
 
-    khanelinix = {
+    mtnptrsn = {
       hardware = {
         power = mkDefault enabled;
       };

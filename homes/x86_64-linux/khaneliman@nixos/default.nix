@@ -8,7 +8,7 @@ let
   inherit (lib.${namespace}) enabled;
 in
 {
-  khanelinix = {
+  mtnptrsn = {
     user = {
       enable = true;
       inherit (config.snowfallorg.user) name;
@@ -26,7 +26,7 @@ in
     services = {
       sops = {
         enable = true;
-        defaultSopsFile = lib.snowfall.fs.get-file "secrets/khanelinix/khaneliman/default.yaml";
+        defaultSopsFile = lib.snowfall.fs.get-file "secrets/mtnptrsn/khaneliman/default.yaml";
         sshKeyPaths = [ "${config.home.homeDirectory}/.ssh/id_ed25519" ];
       };
     };

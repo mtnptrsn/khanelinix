@@ -50,7 +50,7 @@ in
       pinentry-qt
     ];
 
-    khanelinix = {
+    mtnptrsn = {
       home.file = {
         ".gnupg/gpg-agent.conf".text = gpgAgentConf;
       };

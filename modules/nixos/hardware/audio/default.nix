@@ -36,7 +36,7 @@ in
 
     hardware.pulseaudio.enable = mkForce false;
 
-    khanelinix = {
+    mtnptrsn = {
       user.extraGroups = [ "audio" ];
     };
 

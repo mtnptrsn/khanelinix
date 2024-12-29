@@ -10,7 +10,7 @@ in
       WLR_NO_HARDWARE_CURSORS=1
     '';
 
-  khanelinix = {
+  mtnptrsn = {
     nix = enabled;
 
     archetypes = {

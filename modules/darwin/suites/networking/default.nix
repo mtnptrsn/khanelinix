@@ -16,7 +16,7 @@ in
   };
 
   config = mkIf cfg.enable {
-    khanelinix = {
+    mtnptrsn = {
       services = {
         tailscale = lib.mkDefault enabled;
       };

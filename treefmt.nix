@@ -82,8 +82,8 @@
       # WARN no formatter for path: modules/home/theme/qt/Kvantum/Catppuccin-Macchiato-Blue/Catppuccin-Macchiato-Blue.kvconfig
       # WARN no formatter for path: modules/home/theme/qt/Kvantum/kvantum.kvconfig
       # WARN no formatter for path: modules/nixos/programs/graphical/addons/looking-glass-client/client.ini
-      # WARN no formatter for path: systems/x86_64-linux/khanelinix/hyprlandOutput
-      # WARN no formatter for path: systems/x86_64-linux/khanelinix/swayOutput
+      # WARN no formatter for path: systems/x86_64-linux/mtnptrsn/hyprlandOutput
+      # WARN no formatter for path: systems/x86_64-linux/mtnptrsn/swayOutput
       # WARN no formatter for path: templates/c/Makefile.in
       # WARN no formatter for path: templates/c/configure.ac
       # WARN no formatter for path: templates/dotnetf/HelloWorld.Test/HelloWorld.Test.fsproj

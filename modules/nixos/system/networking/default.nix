@@ -111,7 +111,7 @@ in
       traceroute
     ];
 
-    khanelinix.user.extraGroups = [
+    mtnptrsn.user.extraGroups = [
       "network"
       "wireshark"
     ];

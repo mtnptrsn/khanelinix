@@ -31,7 +31,7 @@ in
         youtube-music
       ];
 
-    khanelinix = {
+    mtnptrsn = {
       programs.terminal = {
         media = {
           ncmpcpp = lib.mkDefault enabled;

@@ -21,7 +21,7 @@ in
     file
   ];
 
-  khanelinix = {
+  mtnptrsn = {
     nix = enabled;
 
     programs = {

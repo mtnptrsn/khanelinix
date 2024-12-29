@@ -38,7 +38,7 @@ in
       };
     };
 
-    khanelinix = {
+    mtnptrsn = {
       programs = {
         graphical = {
           apps = {

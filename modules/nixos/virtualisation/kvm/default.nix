@@ -89,7 +89,7 @@ in
       spiceUSBRedirection.enable = true;
     };
 
-    khanelinix = {
+    mtnptrsn = {
       user = {
         extraGroups = [
           "disk"

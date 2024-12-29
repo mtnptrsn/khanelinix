@@ -15,7 +15,7 @@ in
     ./specializations.nix
   ];
 
-  khanelinix = {
+  mtnptrsn = {
     nix = enabled;
 
     archetypes = {

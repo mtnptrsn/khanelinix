@@ -28,8 +28,8 @@ in
     };
 
     sops.secrets = {
-      "khanelinix_khaneliman_ssh_key" = {
-        sopsFile = lib.snowfall.fs.get-file "secrets/khanelinix/khaneliman/default.yaml";
+      "mtnptrsn_khaneliman_ssh_key" = {
+        sopsFile = lib.snowfall.fs.get-file "secrets/mtnptrsn/khaneliman/default.yaml";
       };
     };
   };

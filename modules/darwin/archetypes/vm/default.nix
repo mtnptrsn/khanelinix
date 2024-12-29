@@ -15,7 +15,7 @@ in
   };
 
   config = lib.mkIf cfg.enable {
-    khanelinix = {
+    mtnptrsn = {
       suites = {
         common = enabled;
         desktop = enabled;

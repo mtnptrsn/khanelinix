@@ -29,6 +29,6 @@ in
       ];
     };
 
-    khanelinix.system.networking.enable = mkForce false;
+    mtnptrsn.system.networking.enable = mkForce false;
   };
 }

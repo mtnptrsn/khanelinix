@@ -16,7 +16,7 @@ in
     ./specializations.nix
   ];
 
-  khanelinix = {
+  mtnptrsn = {
     nix = enabled;
 
     archetypes = {
@@ -110,7 +110,7 @@ in
       printing = enabled;
       rustdesk-server = {
         enable = true;
-        relayHosts = [ "khanelinix.local" ];
+        relayHosts = [ "mtnptrsn.local" ];
       };
 
       snapper = {
@@ -176,7 +176,7 @@ in
       sops = {
         enable = true;
         sshKeyPaths = [ "/etc/ssh/ssh_host_ed25519_key" ];
-        defaultSopsFile = lib.snowfall.fs.get-file "secrets/khanelinix/default.yaml";
+        defaultSopsFile = lib.snowfall.fs.get-file "secrets/mtnptrsn/default.yaml";
       };
     };
 

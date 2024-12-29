@@ -165,7 +165,7 @@ in
       startAgent = lib.mkDefault true;
     };
 
-    khanelinix = {
+    mtnptrsn = {
       user.extraOptions.openssh.authorizedKeys.keys = cfg.authorizedKeys;
 
       home.extraOptions = {

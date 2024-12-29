@@ -19,7 +19,7 @@ in
   };
 
   config = mkIf cfg.enable {
-    khanelinix = {
+    mtnptrsn = {
       display-managers = {
         sddm = {
           enable = true;

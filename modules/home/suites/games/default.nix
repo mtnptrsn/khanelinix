@@ -29,7 +29,7 @@ in
       protonup-qt
     ];
 
-    khanelinix = {
+    mtnptrsn = {
       programs = {
         terminal = {
           tools = {

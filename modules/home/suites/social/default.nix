@@ -29,7 +29,7 @@ in
         slack
       ];
 
-    khanelinix = {
+    mtnptrsn = {
       programs = {
         graphical.apps = {
           discord = lib.mkDefault enabled;

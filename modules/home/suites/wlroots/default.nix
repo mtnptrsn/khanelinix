@@ -25,7 +25,7 @@ in
       # pkgs.wl-screenrec
     ];
 
-    khanelinix = {
+    mtnptrsn = {
       programs = {
         graphical = {
           addons = {
